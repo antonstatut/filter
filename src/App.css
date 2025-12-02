@@ -1,0 +1,29 @@
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+.ToolBar {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.ToolBarButton {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  margin-right: 5px;
+  font-weight: bold;
+  color: #595959;
+  font-size: 15px;
+}
+.ToolBarButton:active {
+  background-color: #595959;
+  color: #ffffff;
+  border-color: transparent;
+}
+.ProjectList {
+ columns: 3;
+}
+img {
+  width: 320px;
+  margin-bottom: 20px;
+}
