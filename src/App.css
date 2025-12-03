@@ -14,8 +14,9 @@ body {
   font-weight: bold;
   color: #595959;
   font-size: 15px;
+  cursor: pointer;
 }
-.ToolBarButton:active {
+.active {
   background-color: #595959;
   color: #ffffff;
   border-color: transparent;

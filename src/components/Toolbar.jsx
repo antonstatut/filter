@@ -1,20 +1,23 @@
 
 const Toolbar = (props) => {
-  const {
-    filters,
-    selected,
-    onSelectFilter,
+  const { 
+    filters, 
+    selected, 
+    onSelectFilter 
   } = props
-
-
   return (
     <div className="ToolBar">
-      <button className="ToolBarButton">All</button>
-      <button className="ToolBarButton">Websites</button>
-      <button className="ToolBarButton">Flayers</button>
-      <button className="ToolBarButton">Business Cards</button>
+      {filters.map((filter) => (
+        <button
+          key={filter}
+          onClick={() => onSelectFilter(filter)}
+          className={filter === selected ? 'ToolBarButton active' : 'ToolBarButton'}
+        >
+          {filter}
+        </button>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Toolbar
+export default Toolbar;
